@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Fathia</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#6C63FF",
+              soft: "#F5F3FF",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800">
+    <!-- NAVBAR -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+      <div
+        class="max-w-6xl mx-auto flex justify-between items-center px-6 py-3"
+      >
+        <h2 class="text-primary font-semibold">Fathia Zahra Salsabilla</h2>
+        <nav class="space-x-6 text-sm">
+          <a href="#about" class="hover:text-primary">Tentang</a>
+          <a href="#edu" class="hover:text-primary">Pendidikan</a>
+          <a href="#project" class="hover:text-primary">Proyek</a>
+          <a href="#skill" class="hover:text-primary">Skill</a>
+        </nav>
+      </div>
+    </header>
+
+    <section
+      id="about"
+      class="pt-28 pb-20 bg-gradient-to-br from-purple-100 via-pink-100 to-orange-100"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10"
+      >
+        <div>
+          <h1 class="text-4xl font-semibold leading-tight">
+            Halo, <span class="text-primary">Saya</span><br />
+            Fathia Zahra Salsabilla
+          </h1>
+          <p class="mt-4 text-gray-600 max-w-md">
+            Saya mahasiswa Politeknik Negeri Batam Program Studi Teknologi Rekayasa Perangkat Lunak yang memiliki
+            minat dalam pengembangan web modern.
+          </p>
+        </div>
+
+        <div class="flex justify-center items-center">
+          <div
+            class="relative w-[500px] h-[320px] flex items-center justify-center"
+          >
+            <div
+              class="absolute w-72 h-72 bg-gradient-to-tr from-purple-400 to-pink-300 rounded-full"
+            ></div>
+            <div
+              class="absolute w-80 h-80 border-2 border-dashed border-pink-300 rounded-full"
+            ></div>
+            <img
+              src="assets/pashfoto.png"
+              alt="Foto Profil"
+              class="relative w-64 z-10 object-contain mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
